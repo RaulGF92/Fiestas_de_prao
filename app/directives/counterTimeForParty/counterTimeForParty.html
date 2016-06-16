@@ -1,0 +1,40 @@
+<style type="text/css">
+    .counterTimeForParty{
+        background-color: #c4e49b ;
+    } 
+    .counterTimeForParty h1{
+        margin-left:10%;
+    }
+    .counterTimeForParty thead h1{
+        padding-right:20%;
+    }
+    .counterTimeForParty tbody h2{
+        padding-right:20%;
+        padding-left: 20%;
+    }
+</style>
+<div class="counterTimeForParty">
+    <h1>{{partyprauService.selectParty.name}}</h1>
+    <table>
+        <thead>
+            <th><h1>Dias</h1></th>
+            <th><h1>Horas</h1></th>
+            <th><h1>Minutos</h1></th>
+            <th><h1>Segundos</h1></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><h2>{{countSet.daysElapsed}}</h2></td>
+                <td><h2>{{countSet.hoursElapsed}}</h2></td>
+                <td><h2>{{countSet.minutesElapsed}}</h2></td>
+                <td><h2>{{countSet.secondsElapsed}}</h2></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div>
+        <h2>Compartelo con tus amigos:</h2>
+        <div class="fb-like" data-share="true" data-width="450" data-show-faces="false" ng-mouseover="shareParty(scope)"></div>
+    </div>
+    
+</div>
