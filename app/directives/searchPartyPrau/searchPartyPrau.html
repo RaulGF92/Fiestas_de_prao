@@ -10,5 +10,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <h1>Buscador de fiestas:</h1>
-<select ng-model="selectedName" ng-options="x.name for x in partyprauService.data" ng-change="selectParty($scope.selectedItem.name)">
+<select ng-style="{'width':'250px'}" ng-model="selectedName" ng-options="x.name for x in partyprauService.data" ng-change="selectParty($scope.selectedItem.name)">
 </select>

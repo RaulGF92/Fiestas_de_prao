@@ -64,8 +64,47 @@
     </script> 
   </head>
   <body ng-app="mainApp">
-    <searchPartyPrau></searchPartyPrau>
-    <counterTimeForParty></counterTimeForParty>
-    <mapPositionOfParty></mapPositionOfParty>
+    
+    
+    
+    <div id="myCarousel" class=" hidden-sm carousel slide" data-ride="carousel">
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img src="resource/portada3.jpg" width="100%">
+		  <div class="carousel-caption" style="bottom:25%;">
+			<h2 style="font-size: 80px;">¿Cuanto queda para las fiestas de prau?</h2>
+			<p style="font-size: 30px;">Mira cuanto tiempo queda y donde se realizan.</p>
+			<searchPartyPrau></searchPartyPrau>
+		  </div> 
+		</div>
+	</div>
+	</div>
+	
+	<div id="myCarousel" class="visible-sm carousel slide" data-ride="carousel">
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox" >
+		<div class="item active">
+		  <img src="resource/portada3.jpg" width="100%">
+		  <div class="carousel-caption">
+			<h1>¿Cuanto quedan para las fiestas de prau?</h1>
+			<p>Mira cuanto tiempo queda y donde se realizan.</p>
+			<searchPartyPrau></searchPartyPrau>
+		  </div> 
+		</div>
+	</div>
+	</div>
+
+	<div class="container container text-center">
+	 <counterTimeForParty></counterTimeForParty>
+	</div>
+	
+	<div class="container container text-center" style="background-color:#99ff99;margin:0;width:100%">
+		<br></br>
+		<span class="glyphicon glyphicon-map-marker" style="font-size:100px"></span>
+		<h2>¿Onde ta eso?</h2>
+		<br></br>
+	</div>
+	<mapPositionOfParty></mapPositionOfParty>
   </body>
 </html>

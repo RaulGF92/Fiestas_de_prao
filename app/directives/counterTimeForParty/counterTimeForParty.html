@@ -1,21 +1,15 @@
-<style type="text/css">
+<style>
     .counterTimeForParty{
-        background-color: #c4e49b ;
-    } 
-    .counterTimeForParty h1{
-        margin-left:10%;
+        margin: 30px;
     }
-    .counterTimeForParty thead h1{
-        padding-right:20%;
-    }
-    .counterTimeForParty tbody h2{
-        padding-right:20%;
-        padding-left: 20%;
+    .fb-like{
+        padding-left:100px;
     }
 </style>
 <div class="counterTimeForParty">
-    <h1>{{partyprauService.selectParty.name}}</h1>
-    <table>
+    <center>
+        <h1>{{partyprauService.selectParty.name}}</h1>
+    <table class="table">
         <thead>
             <th><h1>Dias</h1></th>
             <th><h1>Horas</h1></th>
@@ -34,7 +28,9 @@
     
     <div>
         <h2>Compartelo con tus amigos:</h2>
-        <div class="fb-like" data-share="true" data-width="450" data-show-faces="false" ng-mouseover="shareParty(scope)"></div>
+        <div class="fb-like" data-share="true" data-width="600" data-show-faces="false" ng-mouseover="shareParty(scope)"></div>
     </div>
+        
+    </center>
     
 </div>
